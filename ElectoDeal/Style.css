@@ -1,0 +1,430 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: "Poppins", sans-serif;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+/*nav ul li{
+	display: inline-block;
+	margin: 20px;
+}
+a{
+	text-decoration: none;
+	color: #555;
+	}
+	*/
+nav li {
+	list-style:none;
+	display:inline-block;
+	padding-right:10px;
+	padding-left:10px;
+}
+nav li span{
+	padding-left: 5px;
+}
+li a{
+	padding:5px;
+	background-color:#fff;
+	text-decoration:none;
+}
+
+p{
+	color:#555;
+}
+.container{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.col-2{
+	flex-basis: 50%;
+	min-width: 300px;
+}
+.col-2 img{
+	max-width: 100%;
+	padding: 50px 0;
+}
+.col-2 h1{
+	font-size: 50px;
+	line-height: 60px;
+	margin: 25px 0;
+}
+.btn{
+	display: inline-block;
+	background: #3AA3DB;
+	color: #fff;
+	padding: 8px 30px;
+	margin: 30px 0; 
+	border-radius: 30px;
+	transition background: 0.5s;
+}
+.btn:hover{
+	background: #A7CBDF;
+}
+.header{
+	background: radial-gradient(#fff, #3AA3DB);
+}
+.header .row{
+	margin-top: 70px;
+}
+.categories{
+	margin: 70px 0;
+}
+.col-3{
+	flex-basis: 25%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+}
+.col-3 img{
+	width: 125%;
+}
+.small-container{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+	transition: transform 0.5s;
+
+}
+.col-4{
+	flex-basis: 25%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+}
+.col-4 img{
+	width: 100%;
+	transition: transform 0.5s;
+
+}
+.title{
+	text-align: center;
+	margin: 0 auto 80px;
+	position: relative;
+	line-height: 60px;
+	color: #555;
+}
+
+h4{
+	color: #555;
+	font-weight: normal;
+
+}
+.col-4 p{
+	font-size: 14px;
+}
+.rating .fa{
+	color: #ff523b;
+}
+.col-4:hover{
+	transform: translateY(-5);
+}
+/*--------- offer----------*/
+
+.offer{
+	background: radial-gradient(#fff, #3AA3DB);
+	margin-top: 80px;
+	padding: 30px 0;
+}
+small{
+	color: #555;
+}
+
+ /*--------- Footer----------*/
+.footer{
+ 	background: #000;
+ 	color: #8a8a8a;
+ 	font-size: 14px;
+ 	padding: 60px 0 20px;
+ }
+.footer p{
+ 	color: #8a8a8a;
+ }
+.footer h3{
+	color: #fff;
+	margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+	min-width: 250px;
+	margin-bottom: 20px;
+}
+.footer-col-1{
+	flex-basis: 30%;
+}
+.footer-col-2{
+	flex: 1;
+	text-align: center;
+}
+.footer-col-2 img{
+	width: 180px;
+	margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+	flex-basis: 12px;
+	text-align: center;
+}
+ul{
+	list-style-type: none;
+}
+
+.app-logo{
+	margin-top: 20px;
+}
+.app-logo img{
+	width: 140px;
+}
+.footer hr{
+	border: none;
+	background: #b5b5b5;
+	height: 1px;
+	margin: 20px 0;
+}
+
+
+ /*--------- Products Page----------*/
+
+.row-2{
+	justify-content: space-between;
+	margin: 100px auto 50px;
+}
+select{
+	border: 1px solid #ff523b;
+	padding: 5px;
+}
+select:focus{
+	outline: none;
+}
+
+.page-btn{
+	margin: 0 auto 80px;
+}
+.page-btn span{
+	display: inline-block;
+	border: 1px solid #ff523b;
+	margin-left: 10px;
+	width: 40px;
+	height: 40px
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+.page-btn span:hover{
+	background: #fff;
+}
+
+ /*--------- media query for menu----------*/
+
+@media only screen and ( max-width: 800px){
+
+	nav ul{
+		position: absolute;
+		top: 70px;
+		left:0;
+		background: #333;
+		width: 100%;
+		overflow: hidden;
+		transition: max-height 0.5s;
+	}
+	nav ul li{
+		display: block;
+		margin-right: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+
+	}
+	nav ul li a{
+		color: #fff;
+
+	}
+	menu-icon{
+		display: block;
+		cursor: pointer;
+	}
+}
+
+ /*--------- account page----------*/
+ 	.account-page{
+ 		padding: 50px 0;
+ 		background: radial-gradient(#fff, #3AA3DB);
+ 	}
+ 	.form-container{
+ 		background: #fff;
+ 		width: 300px;
+ 		height: 400px;
+ 		position: relative;
+ 		text-align:  center;
+ 		padding: 20px 0;
+ 		margin: auto;
+ 		box-shadow: 0 0 20px 0px rgba(0,0,0,0,1);
+ 		overflow: hidden;
+ 	}
+ 	.form-container span{
+ 		font-weight: bold;
+ 		padding: 0 10px;
+ 		color: #555;
+ 		cursor: pointer;
+ 		width: 100px;
+ 		display: inline-block;
+ 	}
+ 	.form-btn{
+ 		display: inline-block;
+ 	}
+ 	.form-container form{
+ 		max-width: 300px;
+ 		padding: 0 20px;
+ 		position: absolute;
+ 		top: 130px;
+ 	}
+ 	form input{
+ 		width: 100%;
+ 		height: 30px;
+ 		margin: 10px 0;
+ 		padding: 0 10px;
+ 		border: 1px solid #ccc;
+
+ 	}
+ 	form .btn{
+ 		width:  100%;
+ 		border: none;
+ 		cursor: pointer;
+ 		margin: 10px 0;
+ 	}
+ 	form .btn:focus{
+ 		outline: none;
+ 	}
+ 	#LoginForm{
+ 		left: -300px;
+ 	}
+
+ 	#RegForm{
+ 		left: 0px;
+ 	}
+ 	form a{
+ 		font-size: 12px;
+ 	}
+ 	#Indicator{
+ 		width: 100px;
+ 		border: none;
+ 		background: #ff523b;
+ 		height: 3px;
+ 		margin-top: 8px;
+ 		transform: translateX(100px);
+ 		transition: transform 1s;
+ 	}
+
+ /*--------- Cart page----------*/
+
+.product-container{
+max-width: 800px;
+justify-content: space-around;
+margin: 0 auto;
+margin-top: 50px;
+}
+.product-header{
+	width: 100%;
+	max-width: 650px;
+	display: flex;
+	justify-content: flex-start;
+	border-bottom: 4px solid lightgrey;
+	margin: 0 auto;
+
+}
+.product-container ion-icon{
+	font-size: 25px;
+	color: blue;
+	margin-left: 10px;
+	margin-right: 10px;
+	cursor: pointer;
+
+}
+.product-title{
+	width: 45%;
+}
+.price{
+	width: 15%;
+	border-bottom: 1px solid lightgray;
+	display: flex;
+	align-items: center;
+}
+.quantity{
+	width: 30%;
+	border-bottom: 1px solid lightgray;
+	display: flex;
+	align-items: center;
+}
+.total{
+	width: 10%;
+	border-bottom: 1px solid lightgray;
+	display: flex;
+	align-items: center;
+}
+.product{
+	width: 45%;
+	display: flex;
+	justify-content: space-around;;
+	align-items: center;
+	padding: 10px 0;
+	border-bottom: 1px solid lightgray;
+}
+
+
+ /*--------- media query for  less than 600 screen size----------*/
+	@media only screen and ( max-width: 600px){
+	.row{
+		text-align: center;
+	}
+	.col-2, .col-3, .col-4{
+		flex-basis: 100%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
